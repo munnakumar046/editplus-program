@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ValentineDay {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Valentine Search START");
+        System.out.println("Select the girl you like and propose to her.");
+        System.out.println("Did she accept your proposal? (yes/no)");
+        String reply = scanner.nextLine().toLowerCase();
+
+        if (reply.equals("yes")) {
+            System.out.println("Hang-up with GF (Dating, Chatting).");
+            System.out.println("Is the relationship going well? (yes/no)");
+            String relationshipStatus = scanner.nextLine().toLowerCase();
+
+            if (relationshipStatus.equals("yes")) {
+                System.out.println("Get Married");
+            } else {
+                System.out.println("Break up. Depression. Happy to be free again.");
+            }
+        } else {
+            System.out.println("Valentine Search END.");
+        }
+
+        System.out.println("Process complete.");    
+    }
+}
